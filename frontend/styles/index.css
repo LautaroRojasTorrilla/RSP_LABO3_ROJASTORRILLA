@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #f8f9fa; /* Fondo general */
+    --secondary-color: #343a40; /* Color de texto principal */
+    --border-color: #ced4da; /* Color de borde */
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif; /* Usar Roboto como fuente principal */
+}
+
+header {
+    padding: 20px;
+    background-image: url(../assets/images/background.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15vh;
+    max-height: 50vh;
+}
+
+header div img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -10px;
+}
+
+header nav ul,
+footer nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0;
+}
+
+header nav ul li a,
+footer nav ul li a {
+    color: white; /* Color del texto en el header */
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; /* Usar Roboto */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+footer nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo al pasar el mouse */
+}
+
+header h1,
+.container-table h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: white; /* Cambiar color del texto a blanco */
+    text-shadow:
+        1px 1px 0 var(--border-color),
+        -1px -1px 0 var(--border-color),
+        1px -1px 0 var(--border-color),
+        -1px 1px 0 var(--border-color),
+        1px 0 0 var(--border-color),
+        -1px 0 0 var(--border-color),
+        0 1px 0 var(--border-color),
+        0 -1px 0 var(--border-color);
+}
+
+.bg-custom {
+    background-color: #f1f1f1; /* Color de fondo */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.custom-section {
+    background-color: var(--primary-color); /* Color gris suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color); /* Bordeador */
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.custom-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: var(--secondary-color); /* Color del texto */
+}
+
+.custom-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.custom-section .form-control {
+    border-radius: 4px;
+}
+
+.custom-section .btn {
+    border-radius: 4px;
+}
+
+.custom-section .table {
+    margin-bottom: 0;
+}
+
+.custom-section .thead-dark th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.spinner {
+    display: flex; /* Mostrar spinner por defecto */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    border: 10px solid;
+    border-radius: 50%;
+    border-color: red black black black;
+    animation: rotate 1.75s linear infinite;
+}
+
+@keyframes rotate {
+    to { transform: rotate(365deg); }
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-footer-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-footer-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-footer-list li a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    font-size: 14px;
+    text-align: right;
+}
+
+.footer-year {
+    font-weight: bold;
+}
+
+/* Estilos para los checkpoints */
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form-check-input {
+    margin-left: auto; /* Alinea el checkbox a la derecha */
+    border: 2px solid black;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.form-group.text-center .form-check-input {
+    margin-right: 5px;
+}
+.form-group.text-center .form-check-label {
+    margin-left: 5px;
+}
