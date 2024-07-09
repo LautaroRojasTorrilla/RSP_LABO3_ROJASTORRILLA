@@ -9,7 +9,7 @@ export function validarFormulario(data) {
     }
 
     // Verificar que los campos numéricos no sean negativos
-    if (data.precio < 0) {
+    if (data.precio < 1) {
         valid = false;
         mensaje += 'El precio no puede ser negativo.\n';
     }
@@ -17,11 +17,11 @@ export function validarFormulario(data) {
         valid = false;
         mensaje += 'Los kilómetros no pueden ser negativos.\n';
     }
-    if (data.puertas < 0) {
+    if (data.puertas < 1) {
         valid = false;
         mensaje += 'El número de puertas no puede ser negativo.\n';
     }
-    if (data.potencia < 0) {
+    if (data.potencia < 1) {
         valid = false;
         mensaje += 'La potencia no puede ser negativa.\n';
     }

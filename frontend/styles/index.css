@@ -190,3 +190,9 @@ header h1,
 .form-group.text-center .form-check-label {
     margin-left: 5px;
 }
+
+.icon-label {
+    width: 24px; /* Ajusta el tamaño según tus necesidades */
+    height: 24px; /* Ajusta el tamaño según tus necesidades */
+    margin-right: 10px; /* Espacio entre el ícono y el input */
+}
